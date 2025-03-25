@@ -6,7 +6,7 @@ function Cadastro() {
     return (
         <div className="container">
             <div className="image-container">
-                <img src="" alt="/projeto-new/Code-Crafters/frontend/public/assets/cadastro.jpg" />
+                <img src="/projeto-new/Code-Crafters/frontend/public/assets/cadastro.jpg" alt="Imagem do cadastro" />
             </div>
             <div className="form-container">
                 <h2>Cadastro</h2>
