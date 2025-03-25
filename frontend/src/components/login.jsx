@@ -1,11 +1,13 @@
+// src/components/Login.jsx
 import React from 'react';
-import './App.css'; // Certifique-se de que o caminho está correto
+import './App.css'; // Importa o App.css
+import loginImage from '../assets/login.jpg'; // Importa a imagem de login
 
 function Login() {
     return (
         <div className="container">
             <div className="image-container">
-                <img src="/projeto-new/Code-Crafters/frontend/public/assets/login.jpg" alt="Imagem de Login" />
+                <img src={loginImage} alt="Imagem de Login" /> {/* Usando a imagem importada */}
             </div>
             <div className="form-container">
                 <h2>Login</h2>

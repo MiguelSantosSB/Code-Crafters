@@ -1,12 +1,14 @@
-// src/components/Cadastro.jsx
 import React from 'react';
 import './App.css'; // Importa o App.css
+
+// Importe a imagem
+import cadastroImage from '../assets/cadastro.jpg '; // Caminho relativo da pasta src/assets
 
 function Cadastro() {
     return (
         <div className="container">
             <div className="image-container">
-                <img src="/projeto-new/Code-Crafters/frontend/public/assets/cadastro.jpg" alt="Imagem do cadastro" />
+                <img src={cadastroImage} alt="Imagem de Cadastro" /> {/* Imagem importada */}
             </div>
             <div className="form-container">
                 <h2>Cadastro</h2>
