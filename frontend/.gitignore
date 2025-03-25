@@ -21,3 +21,24 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Ignorar arquivos do sistema
+*.log
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
+
+# Ignorar arquivos do VSCode
+.vscode/
+
+# Ignorar pastas de usuários
+AppData/
+Desktop/
+Downloads/
+Imagens/
+Videos/
+Music/
+Documents/
+Saved Games/
+Searches/
