@@ -5,7 +5,7 @@ function Login() {
     return (
         <div className="container">
             <div className="image-container">
-                <img src="assets/login.jpg" alt="Imagem de Login" />
+                <img src="/projeto-new/Code-Crafters/frontend/public/assets/login.jpg" alt="Imagem de Login" />
             </div>
             <div className="form-container">
                 <h2>Login</h2>
