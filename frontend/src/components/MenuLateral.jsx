@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Container = styled.div`
@@ -28,11 +29,6 @@ const Item = styled.div`
   gap: 6px;
 `;
 
-const Link = styled.a`
-  text-decoration: none;
-  color: #222222;
-`;
-
 const MenuLateral = () => {
   return (
     <Container>
@@ -40,22 +36,22 @@ const MenuLateral = () => {
 
       <Item>
         <img src="/assets/icon-gerenciamento-tarefas.svg" alt="/" />
-        <Link href='/'>Gerenciamento de Tarefas</Link>
+        <Link to='/'>Gerenciamento de Tarefas</Link>
       </Item>
       
       <Item>
         <img src="/assets/icon-meu-perfil.svg" alt="/" />
-        <Link href='/'>Meu Perfil</Link>
+        <Link to='/'>Meu Perfil</Link>
       </Item>
       
       <Item>
         <img src="/assets/icon-feedback.svg" alt="/" />
-        <Link href='/'>Feedback</Link>
+        <Link to='/'>Feedback</Link>
       </Item>
       
       <Item>
         <img src="/assets/icon-logout.svg" alt="/" />
-        <Link href='/'>Logout</Link>
+        <Link to='/cadastro'>Logout</Link>
       </Item>
     </Container>
   )

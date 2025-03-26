@@ -1,15 +1,9 @@
 import React from 'react';
 import '../App.css'
 
-// Importe a imagem
-// import cadastroImage from '../../public/assets/cadastro.jpg'; 
-
 function Cadastro() {
     return (
         <div className="container">
-            <div className="image-container">
-                <img src="../../public/assets/cadastro.jpg" alt="Imagem de Cadastro" /> {/* Imagem importada */}
-            </div>
             <div className="form-container">
                 <h2>Cadastro</h2>
                 <form>
