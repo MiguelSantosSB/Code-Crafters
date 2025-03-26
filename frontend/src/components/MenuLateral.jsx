@@ -8,11 +8,10 @@ const Container = styled.div`
     background-color: #D3D3D3;
     color: #222222;
     font-size: 17px;
-    width: 400px;
-    padding: 30px;
-
+    /* width: 350px; */
+    height: 100vh;
+    padding: 40px;
     box-shadow: 0px 0px 10px 0px #00000040;
-
 `;
 
 const Title = styled.h1 `
@@ -41,17 +40,17 @@ const MenuLateral = () => {
       
       <Item>
         <img src="/assets/icon-meu-perfil.svg" alt="/" />
-        <Link to='/'>Meu Perfil</Link>
+        <Link to='/profile'>Meu Perfil</Link>
       </Item>
       
       <Item>
         <img src="/assets/icon-feedback.svg" alt="/" />
-        <Link to='/'>Feedback</Link>
+        <Link to='/feedback'>Feedback</Link>
       </Item>
       
       <Item>
         <img src="/assets/icon-logout.svg" alt="/" />
-        <Link to='/cadastro'>Logout</Link>
+        <Link to='/logout'>Logout</Link>
       </Item>
     </Container>
   )

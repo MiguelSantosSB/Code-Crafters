@@ -4,22 +4,20 @@ import styled from 'styled-components';
 
 const Container = styled.div`
   display: flex;
-  justify-content: space-between;
   margin-bottom: 20px;
 `;
 
 const Header = styled.div`
   display: flex;
-  width: 80vw;
-  padding: 60px;
-  justify-content: space-between;
+  gap: 100px;
+  padding: 60px 0;
 `;
 
 const Item1 = styled.div`
   display: flex;
   align-items: center;
   background-color: #fff;
-  width: 400px;
+  /* width: 400px; */
   height: 40px;
   border-radius: 30px;
   gap: 20px;
