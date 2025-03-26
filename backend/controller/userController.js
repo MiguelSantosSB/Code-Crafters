@@ -38,8 +38,7 @@ exports.findById = async(req, res) => {
     
     try {
         const userExists = await prisma.users.findUnique({ 
-            where: { id: parseInt(id) },
-            include: { tasks: true }
+            where: { id: parseInt(id) }
     });
         if (userExists) {
             return res.status(200).json(userExists);
