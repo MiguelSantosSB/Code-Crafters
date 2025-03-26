@@ -1,13 +1,13 @@
 // src/components/Login.jsx
 import React from 'react';
-import './App.css'; // Importa o App.css
-import loginImage from '../assets/login.jpg'; // Importa a imagem de login
+import '../App.css'; // Importa o App.css
+// import loginImage from '../../public/assets/login.jpg'; 
 
 function Login() {
     return (
         <div className="container">
             <div className="image-container">
-                <img src={loginImage} alt="Imagem de Login" /> {/* Usando a imagem importada */}
+                <img src="../../public/assets/login.jpg" alt="Imagem de Login" />
             </div>
             <div className="form-container">
                 <h2>Login</h2>

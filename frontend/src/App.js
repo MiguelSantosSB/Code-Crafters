@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import MenuLateral from './components/MenuLateral';
 import Menu from './components/Menu';
 import Task from './components/Task';
@@ -12,15 +12,13 @@ function App() {
     <Router>
       <div className="App">
         <MenuLateral />
-        <div className="main-content"> {/* Adicione uma classe para o conteúdo principal */}
+        <div className="main-content">
           <Menu />
-          <Switch>
-            <Route path="/login" component={Login} />
-            <Route path="/cadastro" component={Cadastro} />
-            <Route path="/" exact>
-              <Task />
-            </Route>
-          </Switch>
+          <Routes>
+            <Route path="/login" element={<Login />} />
+            <Route path="/cadastro" element={<Cadastro />} />
+            <Route path="/" element={<Task />} />
+          </Routes>
         </div>
       </div>
     </Router>
@@ -28,4 +26,3 @@ function App() {
 }
 
 export default App;
-
