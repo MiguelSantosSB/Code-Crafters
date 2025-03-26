@@ -19,11 +19,10 @@ app.use(session({
 }));
 
 
-app.use('/register', require('./routes/authRouter'))
-app.use(require('./routes/authRouter'))
-app.use(require('./routes/authRouter'))
+app.use('/auth', require('./routes/authRouter'))
 
 app.use('/task', require('./routes/taskRouter'))
+
 app.use('/user', require('./routes/userRouter'))
 
 app.listen(port, () => {
