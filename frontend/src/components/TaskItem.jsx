@@ -80,6 +80,12 @@ const TaskDate = styled.span`
   color: #666;
 `;
 
+const TaskDeleteBtn = styled.button`
+  border: none;
+  background: transparent;
+  cursor: pointer;
+`;
+
 const TaskDetails = styled.p`
   margin: 8px 0;
   color: #555;
@@ -123,13 +129,8 @@ function CustomCheckbox({ checked, onChange }) {
 }
 
 const TaskItem = () => {
-  const [checked, setChecked] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [tasks, setTasks] = useState([]);
-
-  const handleChange = () => {
-    setChecked(!checked);
-  };
 
   const handleSaveTask = (newTask) => {
     setTasks([...tasks, { ...newTask, id: Date.now() }]);
@@ -143,6 +144,10 @@ const TaskItem = () => {
         : task
     ));
   };
+
+  const deleteTask = (taskId) => { // fazer função de remover tarefa
+    console.log(taskId)
+  }
 
   return (
     <TaskContainer>
@@ -159,6 +164,9 @@ const TaskItem = () => {
                   {task.title}
                 </TaskTitle>
                 <TaskDate>{new Date(task.date).toLocaleDateString()}</TaskDate>
+                <TaskDeleteBtn onClick={() => deleteTask()}>
+                  <img src="/assets/icon-delete.svg" alt="Botão de deletar" />
+                </TaskDeleteBtn>
               </TaskHeader>
               {task.details && <TaskDetails>{task.details}</TaskDetails>}
               <div>
