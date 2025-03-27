@@ -1,6 +1,9 @@
 import React from 'react'
-
+import { format } from 'date-fns';
+import { ptBR } from 'date-fns/locale';
 import styled from 'styled-components';
+
+const dateToday = new Date();
 
 const Container = styled.div`
   display: flex;
@@ -60,7 +63,7 @@ const Menu = () => {
           </Item1>
           <Item2>
             <Img src="/assets/icon-calendar.svg" alt="/" />
-            <p>Sábado, 08/03/2025</p>
+            <p>{format(dateToday, 'EEEE, d MMMM yyyy', { locale: ptBR })}</p>
           </Item2>
         </Header>
       </Container>
